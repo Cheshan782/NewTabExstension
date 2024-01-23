@@ -2,9 +2,24 @@ body{
   background-image: url(./img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 100vh;
 }
 #bluemass {
   position: absolute;
+}
+.HalfCircRight{
+  transform: rotate(90deg);
+  height: 110vh;
+  opacity: 50%;
+  margin-top: -10%;
+  margin-left: -25%;
+}
+.HalfCircLeft{
+  transform: rotate(270deg);
+  height: 110vh;
+  opacity: 50%;
+  margin-top: -10%;
+  margin-right: -25%;
 }
