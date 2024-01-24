@@ -13,10 +13,12 @@ body {
 /*-----------------------------------------------Quotes*/
 .Inspiration{
   position: relative;
+  left: 25%;
   background-color: grey;
+  width: 50%;
   opacity: 80%;
   border-radius: 40px;
-  height: 100px;
+  height: 110px;
   margin-top: -5%;
 }
 h1 {
@@ -85,6 +87,8 @@ h3 {
 img {
   transition: transform 0.3s ease-in-out;
   position: absolute;
+  height: 300px;
+  border-radius: 100px;
 }
 img:hover {
   transform: scale(1.1);
