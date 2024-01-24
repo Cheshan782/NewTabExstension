@@ -4,24 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/Tabicon.png" type="image/png" />
-    <title>Your Homepage</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Your Website Title</h1>
+    <div class="container">
+      <!-- Left Circle -->
+      <div class="half-circle"></div>
 
-    <img class="HalfCircRight" src="./img/HalfCirc.png">
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
+      <div class="container-content">
+        <h1 id="Quote"></h1>
+        <div class="parent">
+          <!----------------------------------song-->
+          <div class="Album">
+            <div class="record-player">
+              <div class="turntable">
+                <div class="record"></div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------car-->
+          <div class="Car">
+            <img
+              style="height: 15%; padding-top: 8%; padding-right: 26%"
+              class="CarImg"
+              src="img/DreamCar.png"
+            />
+          </div>
+          <!----------------------------------shoe-->
+          <div class="Shoe">
+            <img
+              style="height: 25%; padding-top: 21%"
+              class="CarImg"
+              src="img/DreamShoe.png"
+            />
+          </div>
+        </div>
+        <!-----------------------------------------------------------------------------------Right Side-->
+        <div style="float: right" class="parent">
+          <!----------------------------------Flag-->
+          <div class="Flag">
+            <img class="CarImg" src="img/Flag.jpeg" />
+          </div>
 
-    <img class="HalfCircLeft" src="./img/HalfCirc.png">
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
-    
-    <div id="bluemass" class="bluemass">
-      <span></span>
+          <!----------------------------------Sport-->
+          <div class="Sport">
+            <img
+              style="height: 18%; padding-top: 12%; padding-right: 26%"
+              class="CarImg"
+              src="img/Sports.png"
+            />
+          </div>
+          <!----------------------------------Store-->
+          <div class="Store">
+            <img
+              style="padding-top: 31%; padding-right: 2%"
+              class="CarImg"
+              src="img/Store.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Circle -->
+      <div style="transform: rotate(270deg)" class="half-circle"></div>
     </div>
 
     <!-- Your HTML content goes here -->

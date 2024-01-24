@@ -1,25 +1,125 @@
-body{
+body {
   background-image: url(./img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
-#bluemass {
+h1 {
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -5%;
+}
+/*-----------------------------------------------Album*/
+.record-player {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.turntable {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.record {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: url("./img/Album.jpeg") no-repeat center center;
+  background-size: cover;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/*-------------------------------------------------Img Hover*/
+img {
+  transition: transform 0.3s ease-in-out;
   position: absolute;
 }
-.HalfCircRight{
-  transform: rotate(90deg);
-  height: 110vh;
-  opacity: 50%;
-  margin-top: -10%;
-  margin-left: -25%;
+img:hover {
+  transform: scale(1.1);
 }
-.HalfCircLeft{
-  transform: rotate(270deg);
-  height: 110vh;
+
+/*-------------------------------------------------Placement*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 0vh;
+}
+
+/*Left*/
+.Album {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.Car {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.Shoe {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+/*Right*/
+.Flag {
+  grid-area: 1 / 7 / 2 / 8;
+}
+.Sport {
+  grid-area: 2 / 6 / 3 / 7;
+}
+.Store {
+  grid-area: 3 / 7 / 4 / 8;
+}
+
+/*-------------------------------------------------Trasnparent Circles*/
+.half-circle::before,
+.half-circle::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background-color: black;
   opacity: 50%;
-  margin-top: -10%;
-  margin-right: -25%;
+}
+
+.half-circle::before {
+  width: 40%;
+  border-radius: 0 50% 50% 0;
+}
+
+.half-circle::after {
+  right: 0;
+  width: 40%;
+  border-radius: 50% 0 0 50%;
+}
+
+.container-content {
+  padding: 5%;
 }
