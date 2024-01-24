@@ -69,7 +69,7 @@ h3 {
   width: 125px;
   height: 125px;
   border-radius: 50%;
-  background: url("./img/Album.jpeg") no-repeat center center;
+  background: url("./img/Changeables/Album.jpeg") no-repeat center center;
   background-size: cover;
   animation: spin 10s linear infinite;
 }
