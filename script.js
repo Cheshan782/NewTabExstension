@@ -8,6 +8,7 @@ let getQuote = () => {
     .then((data) => data.json())
     .then((item) => {
       document.getElementById("Quote").textContent = item.content;
+      document.getElementById("Author").textContent = item.author;
       console.log(item.content);
       console.log(item.author);
       quote.innerText = item.content;
